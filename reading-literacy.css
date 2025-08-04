@@ -1,0 +1,19 @@
+.reading{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.reading img{
+    max-width: 700px;
+    margin-top: 85px;
+    margin-left: 150px;
+}
+
+.reading p{
+    margin-top: 50px;
+    font-size: 30px;
+    white-space: pre-line;
+    margin-right: 150px;
+}

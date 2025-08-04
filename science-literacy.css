@@ -1,0 +1,19 @@
+.science {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+
+.science img {
+    max-width: 700px;
+    margin-top: 85px;
+    margin-left: 150px;
+}
+
+.science p{
+    margin-top: 200px;
+    font-size: 30px;
+    white-space: pre-line;
+    margin-right: 150px;
+}

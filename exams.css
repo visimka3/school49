@@ -1,0 +1,29 @@
+.exams-img {
+    margin-top: 90px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.exams-text {
+    display: flex;
+    justify-content: center;
+}
+
+.exams-text p,
+.exams-text a {
+    margin-top: 100px;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.37;
+    white-space: pre-line;
+    color: black;
+    text-align: left;
+}
+
+
+.ball{
+  display: flex;
+  justify-content: center;
+  margin-top: 140px;
+}

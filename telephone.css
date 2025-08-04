@@ -1,0 +1,61 @@
+.telephone-inform h1{
+    font-weight: 400;
+font-size: 64px;
+text-align: center;
+white-space: pre-line;
+}
+
+.telephone-inform p{
+    font-weight: 400;
+font-size: 40px;
+white-space: pre-line;
+margin-left: 110px;
+margin-top: 100px;
+}
+
+
+.telephone-inform a{
+    font-weight: 400;
+font-size: 40px;
+color: #000;
+}
+.t{
+    font-weight: 400;
+    font-size: 34px;
+    text-align: center;
+    white-space: pre-line;
+    margin-top: 90px;
+}
+td{
+    font-family: 'Ledger';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+}
+th{
+    font-family: 'Ledger';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+}
+.tab{
+    margin-left: 200px;
+    margin-top: 80px;
+    border-color: #328BA7;
+}
+.tab-1{
+    margin-left: 330px;
+    margin-top: 80px;
+    border-color: #328BA7;
+}
+.t-2{
+    font-weight: 400;
+    font-size: 34px;
+    text-align: center;
+    white-space: pre-line;
+    margin-top: 90px;
+color: #328BA7;
+}
+.ds{
+    margin-left: 300px;
+}

@@ -1,0 +1,63 @@
+.background-school2 {
+    margin-top: 0px;
+    background: url(sourse/images/school2.jpg) no-repeat center;
+    background-size: cover;
+    aspect-ratio: 1920 / 725;
+  }
+
+
+
+
+
+
+
+
+
+
+.our-administration {
+    margin-bottom: 70px;
+    color: #328BA7;
+    font-size: 89px;
+    font-weight: 400;
+    line-height: 1.75;
+    display: flex;
+    justify-content: center;
+}
+
+
+.card{
+    display: flex;
+    margin-left: 100px;
+    margin-bottom: 170px;
+}
+
+
+.card-img{
+    background-color: #D9D9D9;
+    width: 300px;
+    height: 350px;
+}
+
+
+.card-name{
+   margin-left: 24px;
+   margin-bottom: 0px;
+}
+
+
+.card-name > h2{
+    color: #328BA7;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1.75;
+    margin-top: 0;
+}
+
+
+.card-name > p{
+    white-space: pre-line;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.75;
+    margin-top: 0;
+}

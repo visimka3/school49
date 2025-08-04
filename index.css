@@ -1,0 +1,652 @@
+/**
+  Нормализация блочной модели
+ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/**
+    Убираем внутренние отступы слева тегам списков,
+    у которых есть атрибут class
+   */
+:where(ul, ol):where([class]) {
+  padding-left: 0;
+}
+
+/**
+    Убираем внешние отступы body и двум другим тегам,
+    у которых есть атрибут class
+   */
+body,
+:where(blockquote, figure):where([class]) {
+  margin: 0;
+}
+
+/**
+    Убираем внешние отступы вертикали нужным тегам,
+    у которых есть атрибут class
+   */
+:where(h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ul,
+  ol,
+  dl):where([class]) {
+  margin-block: 0;
+}
+
+:where(dd[class]) {
+  margin-left: 0;
+}
+
+/**
+    Убираем стандартный маркер маркированному списку,
+    у которого есть атрибут class
+   */
+:where(ul[class]) {
+  list-style: none;
+}
+
+/**
+    Упрощаем работу с изображениями
+   */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/**
+    Наследуем свойства шрифт для полей ввода
+   */
+input,
+textarea,
+select,
+button {
+  font: inherit;
+}
+
+html {
+  /**
+      Пригодится в большинстве ситуаций
+      (когда, например, нужно будет "прижать" футер к низу сайта)
+     */
+  height: 100%;
+  /**
+      Плавный скролл
+     */
+  scroll-behavior: smooth;
+}
+
+body {
+  /**
+      Пригодится в большинстве ситуаций
+      (когда, например, нужно будет "прижать" футер к низу сайта)
+     */
+  min-height: 100%;
+  /**
+      Унифицированный интерлиньяж
+     */
+  line-height: 1.5;
+}
+
+/**
+    Удаляем все анимации и переходы для людей,
+    которые предпочитают их не использовать
+   */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+
+  margin: 0;
+  padding: 0;
+  font-family: "Ledger", serif;
+}
+
+
+
+
+
+
+/* HEADER */
+
+
+.header-side-menu{
+  overflow: hidden;
+  width: 50px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+  position: relative;
+  margin-top: 25px;
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+
+.header-side-menu span{
+  position: absolute;
+  width: 35px;
+  height: 3px;
+  background-color: white;
+  left: 7px;
+}
+
+/* САМИ SPAN */
+
+
+.header-side-menu span:nth-child(1){
+  transform: translateY(-10px);
+  transition: all .2s;
+}
+
+.header-side-menu span:nth-child(3){
+  transform: translateY(10px);
+  transition: all .2s;
+
+}
+
+
+
+/* КРЕСТИ ИЗ SPAN */
+
+
+.header-side-menu.active span:nth-child(1) {
+  transform: translateY(0) rotate(45deg);
+}
+
+.header-side-menu.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.header-side-menu.active span:nth-child(3) {
+  transform: translateY(0) rotate(-45deg);
+}
+
+
+
+section{
+  overflow: hidden;
+}
+
+
+.header {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  background-color: #328BA7;
+}
+
+
+.header-menu {
+
+  margin: 0 auto;
+  margin-block: 15px;
+  display: flex;
+  align-items: center;
+  column-gap: 80px;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+
+
+.header-logo-img {
+  max-width: 65px;
+  max-height: 65px;
+}
+
+.header-logo {
+  flex-shrink: 0;
+}
+
+.header-link {
+
+  color: white;
+  text-decoration: none;
+  transition: color 0.4s;
+}
+
+
+.header-link:hover {
+  color: rgb(75, 65, 65);
+}
+
+
+
+.functional-literacy-link{
+  display: flex;
+
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* MAIN */
+
+
+
+.background-school {
+  margin-top: 0px;
+  background: url(sourse/images/school.jpg) no-repeat center;
+  background-size: cover;
+  aspect-ratio: 1920 / 725;
+  display: flex;
+}
+
+
+.smal-steps {
+  color: white;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 1.37;
+  padding-left: 73px;
+  padding-top: 65px;
+  white-space: pre-line;
+}
+
+
+
+
+/* SIDE_MENU */
+
+
+
+
+
+.menu-list {
+  background-color: #328BA7;
+  width: 330px;
+  height: 1700px;
+  position: relative;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.4s;
+  border-bottom-right-radius: 10px;
+  position: absolute;
+  top: 95px;
+  left: 0;
+}
+
+
+
+.menu-list.active {
+  opacity: 1;
+  transition: opacity 0.4s;
+}
+
+
+
+
+.menu-link {
+  color: white;
+  text-decoration: none;
+  transition: color 0.2s;
+  
+
+}
+
+.menu-link:hover{
+  color: #206479;
+}
+
+
+.menu-item:hover{
+  transform: scale(1.01);
+}
+
+
+.menu-item{
+  padding: 15px;
+  transition: transform 0.3s;
+  
+}
+
+
+
+
+.triangle{
+  padding-left: 15px;
+  padding-top: 3px;
+
+}
+
+
+
+
+
+
+.triangle.active{
+
+  transform: rotateX(180deg);
+
+}
+
+
+.literacy{
+  list-style-type:  none;
+  background-color: #d9d9d9;
+  border-radius: 20px;
+  margin-top: 15px;
+  display: none;
+}
+
+.literacy.active{
+  display: block;
+}
+
+
+.menu-link-literacy{
+  color: #328BA7;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+/* WELCOME */
+
+
+.welcome {
+  overflow: hidden;
+}
+
+.welcome-menu {
+  display: flex;
+
+}
+
+
+.welcome-h1 {
+  color: #328BA7;
+  font-size: 96px;
+  line-height: 1.38;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 70px;
+  margin-top: 40px;
+}
+
+.welcome-text {
+  font-size: 24px;
+  line-height: 1.37;
+  padding-left: 177px;
+  white-space: pre-line;
+}
+
+
+
+.welcome-img {
+  margin-left: 58px;
+  margin-right: 91px;
+  max-width: 552px;
+  max-height: 670px;
+}
+
+
+
+
+
+
+
+/* BANNER */
+
+
+
+.banner {
+  justify-content: center;
+  display: flex;
+  margin-top: 200px;
+  column-gap: 80px;
+  overflow: hidden;
+}
+
+
+.information {
+  padding-block: 55px;
+  column-gap: 200px;
+  justify-content: center;
+  display: flex;
+  margin-top: 100px;
+  background-color: #328BA7;
+  overflow: hidden;
+  color: white;
+  white-space: pre-line;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.37;
+}
+
+
+.information>div {
+  position: relative;
+}
+
+
+
+.information>div:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  right: -100px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 150px;
+  background-color: white;
+}
+
+
+
+
+
+
+
+
+/* SLIDE-SECTION */
+
+
+
+.official-resources {
+  margin-top: 163px;
+  color: #328BA7;
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1.37;
+}
+
+
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  position: relative;
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+
+.slider {
+  /* position: relative; */
+  width: 84%;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+
+.slides {
+  display: flex;
+  /* Плавность */
+  transition: transform 0.5s ease-in-out;
+}
+
+
+.slides img {
+  width: 33.33%;
+  /* height: auto; */
+  flex-shrink: 0;
+}
+
+
+.prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #328BA7;
+  color: white;
+  border: none;
+  padding: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 24px;
+  transition: background-color 0.4s;
+}
+
+.prev:hover {
+  background-color: #206479;
+}
+
+
+
+.next{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #328BA7;
+  color: white;
+  border: none;
+  padding: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 24px;
+  transition: background-color 0.4s;
+}
+
+.next:hover {
+  background-color: #206479;
+}
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+
+.footer {
+  margin-top: 220px;
+  background-color: #328BA7;
+  overflow: hidden;
+}
+
+
+.footer__logo {
+  display: grid;
+  justify-content: center;
+}
+
+
+
+.footer__logo--img {
+  margin-top: 50px;
+}
+
+
+.footer__info{
+  display: flex;
+  justify-content: center;
+  column-gap: 250px;
+}
+
+
+
+.footer__text--item {
+  white-space: pre-line;
+  color: white;
+  font-size: 24px;
+  line-height: 1.37;
+  font-weight: 400;
+  margin-left: 30px;
+}
+
+.footer__end{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+
+.footer__end p{
+  color: white;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1.37;
+  margin-top: 50px;
+}

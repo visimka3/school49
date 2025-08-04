@@ -1,0 +1,56 @@
+.information-lesson h1 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 96px;
+    color: #328BA7;
+    margin-top: 36px;
+}
+
+
+.top-box {
+    display: flex;
+}
+
+
+.top-box img {
+    width: 400px;
+    height: 450px;
+    background: #d9d9d9;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+.top-box p {
+    font-weight: 400;
+    font-size: 32px;
+    color: #328ba7;
+    white-space: pre-line;
+    margin-top: 100px;
+    margin-left: 30px;
+
+}
+
+
+
+.bottom-box {
+    display: flex;
+}
+
+
+.bottom-box img {
+    width: 400px;
+    height: 450px;
+    background: #d9d9d9;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+.bottom-box p {
+    font-weight: 400;
+    font-size: 32px;
+    color: #328ba7;
+    white-space: pre-line;
+    margin-top: 100px;
+    margin-left: 30px;
+
+}

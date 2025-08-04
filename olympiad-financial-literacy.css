@@ -1,0 +1,39 @@
+.ol{
+    display: flex;
+    font-size: 30px;
+    margin-top: 100px;
+    overflow: hidden;
+
+}
+
+
+
+
+
+.olympiad p{
+    margin-left: 150px;
+    margin-right: 15px;
+    font-size: 30px;
+    margin-top: 100px;
+    overflow: hidden;
+    white-space: pre-line;
+}
+
+
+
+
+.olympiad img{
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 65px;
+    margin-top: 100px;
+}
+
+
+
+
+.ol img{
+    max-width: 1200px;
+    max-height: 600px;
+    margin-right: 100px;
+}

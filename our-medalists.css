@@ -1,0 +1,52 @@
+.medalists h1{
+    font-weight: 400;
+font-size: 96px;
+text-align: center;
+color: #328ba7;
+}
+
+
+
+.medals{
+    display: flex;
+    justify-content: space-between;
+}
+
+.medalists p{
+    font-weight: 400;
+font-size: 24px;
+white-space: pre-line;
+}
+
+.gold{
+    margin-left: 122px;
+}
+
+
+.gold h2{
+    text-align: center;
+    font-size: 45px;
+    font-weight: 400;
+    color: #FFD700;
+}
+
+
+
+
+.medalists p{
+    font-weight: 400;
+font-size: 24px;
+white-space: pre-line;
+}
+
+.silver{
+    margin-right: 122px;
+}
+
+
+.silver h2{
+    text-align: center;
+    font-size: 45px;
+    font-weight: 400;
+    color: #c0c0c0;
+}

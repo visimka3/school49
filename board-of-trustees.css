@@ -1,0 +1,25 @@
+.board-of-trustees p {
+    font-weight: 400;
+    font-size: 40px;
+    color: black;
+    margin-inline: 100px;
+    white-space: pre-line;
+}
+
+.board-of-trustees a {
+    font-weight: 400;
+    font-size: 40px;
+    color: black;
+    margin-inline: 100px;
+    white-space: pre-line;
+}
+
+
+.name {
+    font-weight: 400;
+    font-size: 40px;
+    text-align: center;
+    white-space: pre-line;
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
